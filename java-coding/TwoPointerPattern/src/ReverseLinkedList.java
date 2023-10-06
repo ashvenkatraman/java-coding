@@ -10,6 +10,10 @@ public class ReverseLinkedList {
             right = right.next;
         }
 
+        if (right == null){
+            return left.next;
+        }
+
         while (right.next != null){
             // Now that we have the right and left separated by n spaces, move the them together until right hits the end
             right = right.next;
