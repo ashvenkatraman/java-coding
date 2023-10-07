@@ -157,7 +157,7 @@ public class TwoPointerPattern {
 
          */
 
-        /* Code to execute: Reverse Words in a String */
+        /* Code to execute: Reverse Words in a String
 
         String[] inputs = {
                 "Hello World", "We love Python",
@@ -171,7 +171,28 @@ public class TwoPointerPattern {
             System.out.println(new String(new char[100]).replace('\0', '-'));
         }
 
+         */
 
+        // Statement
+        //Write a function that takes a string as input and checks whether it can be a valid palindrome by removing at most one character from it.
+
+        /* Code to test isPalindrome - Had to move on without being able to finish this correctly
+
+        String[] testCase = {
+                "tebbem",
+                "madame",
+                "DEAD",
+                "RACECATR",
+                "ABBA",
+                "TART"
+        };
+        for (int k = 0; k < testCase.length; k++) {
+            System.out.println("Test Case # " + (k + 1));
+            System.out.println(Palindrome.isAlmostAPalindrome(testCase[k]));
+            System.out.println(new String(new char[100]).replace('\0', '-'));
+        }
+
+         */
     }
 
 }
