@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FastAndSlowPointerPattern/FastAndSlowPointerPattern.iml" filepath="$PROJECT_DIR$/FastAndSlowPointerPattern/FastAndSlowPointerPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/TwoPointerPattern/TwoPointerPattern.iml" filepath="$PROJECT_DIR$/TwoPointerPattern/TwoPointerPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UtilityClasses/UtilityClasses.iml" filepath="$PROJECT_DIR$/UtilityClasses/UtilityClasses.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-coding.iml" filepath="$PROJECT_DIR$/java-coding.iml" />
     </modules>
   </component>
