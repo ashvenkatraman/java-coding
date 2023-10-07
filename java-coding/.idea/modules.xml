@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/FastAndSlowPointerPattern/FastAndSlowPointerPattern.iml" filepath="$PROJECT_DIR$/FastAndSlowPointerPattern/FastAndSlowPointerPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/TwoPointerPattern/TwoPointerPattern.iml" filepath="$PROJECT_DIR$/TwoPointerPattern/TwoPointerPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-coding.iml" filepath="$PROJECT_DIR$/java-coding.iml" />
     </modules>
