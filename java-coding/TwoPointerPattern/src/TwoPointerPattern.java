@@ -157,6 +157,20 @@ public class TwoPointerPattern {
 
          */
 
+        /* Code to execute: Reverse Words in a String */
+
+        String[] inputs = {
+                "Hello World", "We love Python",
+                "The quick brown fox jumped over the lazy dog.",
+                "Hey", "To be or not to be", "AAAAA", " Hello     World "};
+
+        for(int i=0; i<inputs.length; i++) {
+            System.out.print(i + 1);
+            System.out.println(".\tActual string:\t\t" + inputs[i]);
+            System.out.println("\tReversed String:\t" + ReverseWordsInSentence.reverseWords(inputs[i]));
+            System.out.println(new String(new char[100]).replace('\0', '-'));
+        }
+
 
     }
 
