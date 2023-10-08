@@ -147,7 +147,85 @@ public class FastAndSlowPointerPattern {
         }
         */
 
+        /* Problem: Find the duplicate
 
+        Statement
+            Given an unsorted array of positive numbers, nums, such that the values lie in the range [1,n], inclusive, and that there are n+1 numbers in the array, find and return the duplicate number present in nums. There is only one repeated number in nums.
+            Note: You cannot modify the given array nums. You have to solve the problem using only constant extra space.
+        Constraints:
+            1≤n≤105
+            nums.length =n+1
+            1≤ nums[i] ≤n
+            All the integers in nums are unique, except for one integer that will appear more than once.
+
+         */
+
+        /* Code to run Find Duplicates
+        int[][] nums = {
+                {1, 3, 2, 3, 5, 4},
+                {2, 4, 5, 4, 1, 3},
+                {1, 6, 3, 5, 1, 2, 7, 4},
+                {1, 2, 2, 4, 3},
+                {3, 1, 3, 5, 6, 4, 2}
+        };
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(i + 1);
+            System.out.println(".\tnums = "+ Arrays.toString(nums[i]));
+            System.out.println("\tDuplicate number = "+ FindDuplicate.findDuplicate(nums[i]));
+            System.out.println(new String(new char[100]).replace('\0', '-'));
+        }
+         */
+
+
+        /* Problem: Palindrome in a linked list
+        Solution
+            The fast and slow pointers technique helps determine whether a linked list is a palindrome or not, because it allows us to efficiently traverse the list and find the middle node in a single pass. We can do this in linear time and with constant extra space.
+            To determine whether a linked list is a palindrome, we first find the middle node of the linked list using the fast and slow pointers approach. Then, we will reverse the second half of the linked list, starting from the node after the middle node until the end of the list. Next, we will compare the first half with the second half.
+            If both halves of the list match, the linked list is a palindrome. Otherwise, it is not. In the end, we reverse the second half of the linked list again. This is done to revert it to the original structure of the linked list so that the input linked list is not modified by the palindrome checking process.
+            The algorithm to solve this problem is as follows:
+            First, we will find the middle node of the linked list. To do this, we’ll traverse the linked list using two pointers, where the slow pointer will move one step forward, and the fast pointer will move two steps forward. We’ll do this until the fast pointer reaches the end of the list or a null node. At this point, the slow pointer will be pointing at the middle node of the list.
+            Next, we’ll reverse the second half of the linked list, starting from the node after the middle node. To reverse the list, we will follow these steps:
+            Initialize three pointers: prev, next, and curr. The prev and next pointers are initialized as NULL, while curr is initialized to the head of the linked list.
+            Iterate over the linked list. While iterating, perform the following steps:
+            Before changing the next of curr, store the next node using the following line of code: next = curr.next.
+            Next, we’ll assign the next pointer of curr to prev using the following line of code curr.next = prev. The effect of this line of code is that it will reverse the pointer from forward to backward to reverse the linked list.
+            After reversing the pointer, we will update prev as curr and curr as next, using the following lines of code respectively: prev = curr and curr = next.
+            After finding the mid of the linked list and reversing its second half, the last step is to compare every element of the first half of the linked list with the corresponding element in the second half of the reversed linked list. If both halves are the same, the list is a palindrome, and we’ll return TRUE. Otherwise, we’ll return FALSE.
+
+        Time complexity
+            The algorithm’s time complexity is O(n), where n is the total number of nodes in the linked list.
+        Space complexity
+            The space complexity of the algorithm above is O(1), because it does not use any extra space in memory.
+         */
+
+        /*
+        Code for checking if a linked list contains a palindrome
+         */
+
+        int[][] input={
+                {2, 4, 6, 4, 2},
+                {0, 3, 5, 5, 0},
+                {9, 27, 4, 4, 27, 9},
+                {5, 4, 7, 9, 4, 5},
+                {5, 10, 15, 20, 15, 10, 5}
+        };
+
+        for(int i=0; i<input.length; i++){
+            System.out.print(i+1);
+            LinkedList<Integer> list = new LinkedList<Integer>();
+            list.createLinkedList(input[i]);
+            System.out.print(".\tLinked list:  ");
+            PrintList.printListWithForwardArrow(list.head);
+            System.out.print("\tIs it a palindrome?  ");
+            boolean result = PalindromeList.palindrome(list.head);
+            if(result){
+                System.out.println("Yes");
+            }
+            else{
+                System.out.println("No");
+            }
+            System.out.println(new String(new char[100]).replace('\0', '-'));
+        }
 
 
     }
